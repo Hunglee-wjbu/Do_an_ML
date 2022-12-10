@@ -1,6 +1,6 @@
-from root.pages.Home import HomePage
-from root.pages.PredictCaliHouse import PredictCaliHouse
-from root.pages.NumberIdentifi import NumberIdentifi
+from pages.Home import HomePage
+from pages.PredictCaliHouse import PredictCaliHouse
+from pages.NumberIdentifi import NumberIdentifi
 
 pages = {
     "Home" : HomePage,
