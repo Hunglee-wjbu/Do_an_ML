@@ -25,7 +25,7 @@ if __name__ == '__main__':
             section[data-testid="stSidebar"] {display:none;}
         </style>
     """
-    # st.markdown(no_sidebar_style, unsafe_allow_html=True)
+    st.markdown(no_sidebar_style, unsafe_allow_html=True)
 
     #Tắt footer
     hide_st_style = f"""
