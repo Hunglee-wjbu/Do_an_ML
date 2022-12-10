@@ -1,5 +1,5 @@
 import streamlit as st
-from pages import pages
+from root.pages import pages
 from hydralit import HydraApp
 
 over_theme = {'txc_inactive': '#FFFFFF'}
