@@ -63,7 +63,7 @@ class NumberIdentifi(HydraHeadApp):
             with col4:
                 if st.button("Predict"):
                     RESHAPED = 784
-                    knn = joblib.load('.\\pages\\NumberRecognition\\knn_mnist.pkl')
+                    knn = joblib.load('.\\root\\pages\\NumberRecognition\\knn_mnist.pkl')
                     test_x = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
                     val = knn.predict(test_x.reshape(1,RESHAPED))
                     font_size = f"""
