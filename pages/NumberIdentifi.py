@@ -2,6 +2,7 @@ import joblib
 import numpy as np
 import streamlit as st
 import cv2
+from PIL import Image
 from streamlit_drawable_canvas import st_canvas
 import streamlit_nested_layout
 from hydralit import HydraHeadApp
@@ -41,7 +42,8 @@ class NumberIdentifi(HydraHeadApp):
                     key="canvas",
                 )
             with col2:
-                st.write("=====================================>")
+                image = Image.open('.\\pages\\NumberRecognition\\muiten.png')
+                st.image(image)
                 page_bg = f"""
                 <style>
                 div[data-testid="stHorizontalBlock"] {{
