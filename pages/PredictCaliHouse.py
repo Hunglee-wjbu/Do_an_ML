@@ -17,7 +17,7 @@ import pandas as pd
 from hydralit import HydraHeadApp
 
 #This will be useful for the encoding phase
-housing = pd.read_csv('.\\CaliHousing\\housing.csv')
+housing = pd.read_csv('./pages/CaliHousing/housing.csv')
 # Them column income_cat dung de chia data
 housing["income_cat"] = pd.cut(housing["median_income"],
                             bins=[0., 1.5, 3.0, 4.5, 6., np.inf],
@@ -93,13 +93,13 @@ class PredictCaliHouse(HydraHeadApp):
                 
         # Reads in saved classification model
         if(select == "Linear Regression"):
-            model = joblib.load('.\\pages\\CaliHousing\\lin_reg.pkl')
+            model = joblib.load('./pages/CaliHousing/lin_reg.pkl')
         elif(select == "Random Forest Regression"):
-            model = joblib.load('.\\pages\\CaliHousing\\forest_reg.pkl')
+            model = joblib.load('./pages/CaliHousing/forest_reg.pkl')
         elif(select == "Random Forest Regression Grid Search CV"):
-            model = joblib.load('.\\pages\\CaliHousing\\forest_reg_grid_search.pkl')
+            model = joblib.load('./pages/CaliHousing/forest_reg_grid_search.pkl')
         elif(select == "Random Forest Regression Random Search CV"):
-            model = joblib.load('.\\pages\\CaliHousing\\forest_reg_random_search.pkl')
+            model = joblib.load('./pages/CaliHousing/forest_reg_random_search.pkl')
         st.subheader('Dự đoán')
         st.write("Giá nhà dự đoán: $", model.predict(df_prepared)[0])
         
