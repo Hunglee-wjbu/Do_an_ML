@@ -27,7 +27,7 @@ class NumberIdentifi(HydraHeadApp):
                 with temp1:
                     stroke_width = st.slider("Nét vẽ: ", 1, 25, 18)
         with container1.container():
-            col1,col2,col3,col4 = st.columns([1,2,1,5])
+            col1,col2,col3,col4 = st.columns([1,1,1,5])
             with col1:
                 # Create a canvas component
                 canvas_result = st_canvas(
@@ -48,9 +48,6 @@ class NumberIdentifi(HydraHeadApp):
                 <style>
                 div[data-testid="stHorizontalBlock"] {{
                     align-items: center;
-                }}
-                [title="streamlit_drawable_canvas.st_canvas"] > #document.html:root{{
-                    --background-color: none;                
                 }}
                 </style>
                 """
