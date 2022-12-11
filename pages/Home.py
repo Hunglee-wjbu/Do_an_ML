@@ -22,8 +22,8 @@ class HomePage(HydraHeadApp):
                         st.write("Nguyễn Khắc Dương")
                     with col2_2:
                         st.subheader("Mã số sinh viên")
-                        st.write("20110617")
                         st.write("20110145")
+                        st.write("20110617")
                         st.write("20110627")
             with col3:
                 st.write(' ')
