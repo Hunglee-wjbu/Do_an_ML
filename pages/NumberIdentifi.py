@@ -1,7 +1,6 @@
 import joblib
 import numpy as np
 import streamlit as st
-import cv2
 from PIL import Image
 from streamlit_drawable_canvas import st_canvas
 import streamlit_nested_layout
